@@ -1,6 +1,6 @@
 .grid-box img {
   width: 50%; /* Makes the image take up the full width of the grid box */
-  height: auto; /* Maintains the aspect ratio of the image */
+  height: 50%; /* Maintains the aspect ratio of the image */
 }
 
 .item1 { grid-area: header; }
