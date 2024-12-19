@@ -17,6 +17,8 @@
 <div class="container p-5 my-5 text-center text-white">
   <h1>My Personal Webpage</h1>
   <p>A <strong>Bootstrap5</strong> Exercise</p>
+
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-md bg-primary text-white">About Me
@@ -38,6 +40,22 @@
   </div>
   <br>
   
+  <button type="button" onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+
+  <br>
+  <button type="button" onclick="myFunction2()">Try it</button>
+  <script>
+    function myFunction2() {
+      const element = document.getElementsByTagName("h1");
+      document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+    }
+  </script>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-md bg-primary text-white">Course
