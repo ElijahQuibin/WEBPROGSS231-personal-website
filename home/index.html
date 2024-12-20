@@ -21,7 +21,8 @@
   
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md bg-primary text-white">About Me
+      <div class="col-md bg-primary text-white">
+        <h3>About Me</h3>
         <p>I am a passionate student ready to learn new things!</p>
         <p>I enjoy exploring new technologies and applying them to solve real-world problems.</p>
       </div>
@@ -39,35 +40,22 @@
     </div>  
   </div>
   <br>
-  
-  <button type="button" onclick="myFunction()">Click Me and Win</button>
-  <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "Paragraph changed.";
-    }
-  </script>
-
-  <br>
-  <button type="button" onclick="myFunction2()">Curious Bout this button?</button>
-  <script>
-    function myFunction2() {
-      const element = document.getElementsByTagName("h1");
-      document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
-    }
-  </script>
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md bg-primary text-white">Course
+      <div class="col-md bg-primary text-white">
+        <h3>Course</h3>
         <p>BS in Computer Science</p>
         <p>Interested in Blockchaining and Cybersecurity</p>
       </div>
 
-      <div class="col-md bg-dark text-white">IT Experience
+      <div class="col-md bg-dark text-white">
+        <h3>IT Experience</h3>
         <p>I have more than 10 years of experience in using technology</p>
       </div>
 
-      <div class="col-md bg-primary text-white">Hobbies and Interests
+      <div class="col-md bg-primary text-white">
+        <h3>Hobbies and Interests</h3>
         <ul>
             <li>Coding</li>
             <li>Completing courses</li>
@@ -76,12 +64,28 @@
         </ul>
       </div>
 
-      <div class="col-md bg-dark text-white">Goals In Life / Dream
+      <div class="col-md bg-dark text-white">
+        <h3>Goals In Life / Dream</h3>
         <p>My goal is to become a successful software engineer</p>
       </div>
     </div>  
   </div>
 </div>
 
+<button type="button" onclick="myFunction()">This here is Moises</button>
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+</script>
+
+<br>
+<button type="button" onclick="myFunction2()">Click To know more about Moises</button>
+<script>
+  function myFunction2() {
+    const element = document.getElementsByTagName("h1");
+    document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+  }
+</script>
 </body>
 </html>
