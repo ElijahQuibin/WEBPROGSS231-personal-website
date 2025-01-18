@@ -9,11 +9,11 @@ Vue.component('gallery-component', {
     data() {
         return {
             images: [
-                { id: 1, src: '/images/1.jpg', alt: 'Picture 1' },
-                { id: 2, src: '/images/2.webp', alt: 'Picture 2' },
-                { id: 3, src: '/images/3.jpg', alt: 'Picture 3' },
-                { id: 4, src: '/images/4.jpg', alt: 'Picture 4' },
-                { id: 5, src: '/images/5.JPG', alt: 'Picture 5' }
+                { id: 1, src: 'images/1.jpg', alt: 'Picture 1' },
+                { id: 2, src: 'images/2.webp', alt: 'Picture 2' },
+                { id: 3, src: 'images/3.jpg', alt: 'Picture 3' },
+                { id: 4, src: 'images/4.jpg', alt: 'Picture 4' },
+                { id: 5, src: 'images/5.JPG', alt: 'Picture 5' }
             ]
         };
     }
