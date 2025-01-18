@@ -1,6 +1,6 @@
 Vue.component('gallery-component', {
     template: `
-        <div>
+        <div class="gallery-container">
             <div v-for="image in images" :key="image.id" class="gallery-item">
                 <img :src="image.src" :alt="image.alt">
             </div>
@@ -21,7 +21,8 @@ Vue.component('gallery-component', {
 
 Vue.component('guestbook-component', {
     template: `
-        <div>
+        <div class="comment-section">
+            <h2>Comment Section</h2>
             <form @submit.prevent="submitForm">
                 <div>
                     <label for="name">Name:</label>
@@ -33,7 +34,7 @@ Vue.component('guestbook-component', {
                 </div>
                 <button type="submit">Submit</button>
             </form>
-            <div v-if="submitted">
+            <div v-if="submitted" class="guestbook-card">
                 <h3>Thank you for your message!</h3>
                 <p><strong>Name:</strong> {{ name }}</p>
                 <p><strong>Message:</strong> {{ message }}</p>
