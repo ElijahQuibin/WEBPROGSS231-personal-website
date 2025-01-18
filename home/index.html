@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./home/vue.js"></script>
 </head>
 <body>
     <div id="top"></div>
@@ -136,6 +138,23 @@
             <div class="card-skill"><i class="fab fa-figma"></i></div>
         </div>
     </section>
+
+    <!-- Picture Gallery Section -->
+    <section id="gallery">
+        <h2 class="target">Picture Gallery</h2>
+        <div id="gallery-app">
+            <gallery-component></gallery-component>
+        </div>
+    </section>
+    
+    <!-- Survey/Comments/Guestbook Form Section -->
+    <section id="guestbook">
+        <h2 class="target">Guestbook</h2>
+        <div id="guestbook-app">
+            <guestbook-component></guestbook-component>
+        </div>
+    </section>
+
     </div>
     <footer>
         <span>
@@ -149,5 +168,8 @@
     <div class="goto-top">
         <a href="#top"><i class="fas fa-arrow-up"></i></a>
       </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+</script>
+</body>
 </html>
